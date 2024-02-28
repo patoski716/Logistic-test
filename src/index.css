@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family:lato;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero{
+    background: url('../src/assets/hero.png');
+    height: 485px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-danger{
+    background: #E71800 !important;
+}
+
+.bg-red{
+    background-color: #E71800;
+    width: 180px;
+    height: 6px;
+    border-radius: 8px;
+}
+.text-danger{
+    color: #E71800 !important;
+}
+
+.bg-cover{
+    background: url('../src/assets/cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 191px;
+}
