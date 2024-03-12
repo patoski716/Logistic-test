@@ -5,7 +5,7 @@ import Homepage from './components/Homepage'
 import Service from './components/Service'
 import Tracking from './components/Tracking'
 import Contact from './components/Contact'
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { HashRouter as Router, Routes, Route} from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -19,14 +19,10 @@ function App() {
     <Header/>
     <Router>
       <Routes>
-        <Route exact path='/' element={<Homepage/>}/>
-        <Route exact path='/service' element={<Service/>}/>
-        <Route exact path='/tracking' element={<Tracking/>}/>
-        <Route exact path='/contact' element={<Contact/>}/>
-
-        
-
-
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/service' element={<Service/>}/>
+        <Route path='/tracking' element={<Tracking/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </Router>
     <Footer/>
